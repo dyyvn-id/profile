@@ -1,0 +1,94 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#050816;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+overflow:hidden;
+}
+
+.bg{
+position:fixed;
+width:100%;
+height:100%;
+background:
+radial-gradient(circle at top,#1e90ff22,transparent 60%),
+#050816;
+z-index:-1;
+}
+
+.card{
+width:350px;
+padding:35px;
+border-radius:20px;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(18px);
+text-align:center;
+box-shadow:0 0 30px #1e90ff55;
+animation:fade 1.5s;
+}
+
+.profile{
+width:140px;
+height:140px;
+border-radius:50%;
+object-fit:cover;
+border:4px solid #4da3ff;
+margin-bottom:20px;
+box-shadow:0 0 25px #4da3ff;
+}
+
+h1{
+font-size:28px;
+margin-bottom:8px;
+}
+
+h3{
+color:#4da3ff;
+margin-bottom:20px;
+}
+
+p{
+line-height:1.7;
+margin-bottom:25px;
+}
+
+.button{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.button a{
+text-decoration:none;
+background:#1e90ff;
+color:white;
+padding:13px;
+border-radius:12px;
+font-weight:bold;
+transition:.3s;
+}
+
+.button a:hover{
+transform:scale(1.05);
+background:#63b3ff;
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+  }
